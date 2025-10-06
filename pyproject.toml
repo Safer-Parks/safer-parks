@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "safer_parks"
+version = "0.1.0"
+description = "A package for geospatial analysis of park safety and accessibility"
+authors = [{name = "Your Name"}]
+requires-python = ">=3.9"
+dependencies = [
+    "geopandas",
+    "shapely",
+    "pandas",
+    "numpy"
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=6.0",
+    "pytest-cov"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,35 @@
+# this environment uses a new version of osmnx, note some functions are depreciated
+name: safer-parks-env-v1
+
+channels:
+  - conda-forge
+  - nodefaults
+
+dependencies:
+  - python
+  - pytest
+  - blackd
+  - isort
+
+  # remove/modify these as needed
+  - numpy
+  - pandas
+  - geopandas
+  - osmnx
+  - networkx
+  - shapely
+  - bs4
+  - requests
+  - lat_lon_parser
+  - folium
+  - rasterio
+  - matplotlib
+  - fiona
+  - jupyter
+
+
+  # keep this to install your Python package locally
+  - pip
+  - pip:
+    - Pillow
+    - --editable .
